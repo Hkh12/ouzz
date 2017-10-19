@@ -41,16 +41,16 @@ body{
     margin-left: auto;
     @include media($xs-breakpoint){
         width: calc(#{$xs-breakpoint} - 30px);
-    };
+    }
     @include media($sm-breakpoint){
         width: calc(#{$sm-breakpoint} - 30px);
-    };
+    }
     @include media(){
         width: calc(#{$md-breakpoint} - 30px);
-    };
+    }
     @include media($lg-breakpoint){
         width: calc(#{$lg-breakpoint} - 30px);
-    };
+    }
 }
 
 .oz-col{
@@ -64,10 +64,10 @@ body{
     @for $i from 0 through $grid-number{
         &.xs-#{$i}{
             width: calc-grid($i)
-        };
+        }
         &.xs-fw-#{$i}{
             left: calc-grid($i)
-        };
+        }
         &.xs-bw-#{$i}{
             right: calc-grid($i)
         }
@@ -76,36 +76,36 @@ body{
         @include media($sm-breakpoint){
             &.sm-#{$i}{
                 width: calc-grid($i)
-            };
+            }
             &.sm-fw-#{$i}{
                 left: calc-grid($i)
-            };
+            }
             &.sm-bw-#{$i}{
                 right: calc-grid($i)
             }
-        };
+        }
     }
     @for $i from 0 through $grid-number{
         @include media($md-breakpoint){
             &.md-#{$i}{
                 width: calc-grid($i)
-            };
+            }
             &.md-fw-#{$i}{
                 left: calc-grid($i)
-            };
+            }
             &.md-bw-#{$i}{
                 right: calc-grid($i)
             }
-        };
+        }
     }
     @for $i from 0 through $grid-number{
         @include media($lg-breakpoint){
             &.lg-#{$i}{
                 width: calc-grid($i)
-            };
+            }
             &.lg-fw-#{$i}{
                 left: calc-grid($i)
-            };
+            }
             &.lg-bw-#{$i}{
                 right: calc-grid($i)
             }
@@ -152,5 +152,101 @@ table, table-cell, inline, none{
         .oz-mr-#{$i}#{$unit} {
             margin-right: #{$i}#{$unit}
         }
+        @include media($sm-breakpoint){
+            .oz-sm-p-#{$i}#{$unit} {
+                padding: #{$i}#{$unit}
+            }
+            .oz-sm-pt-#{$i}#{$unit} {
+                padding-top: #{$i}#{$unit}
+            }
+            .oz-sm-pb-#{$i}#{$unit} {
+                padding-bottom: #{$i}#{$unit}
+            }
+            .oz-sm-pl-#{$i}#{$unit} {
+                padding-left: #{$i}#{$unit}
+            }
+            .oz-sm-pr-#{$i}#{$unit} {
+                padding-right: #{$i}#{$unit}
+            }
+            .oz-sm-m-#{$i}#{$unit} {
+                margin: #{$i}#{$unit}
+            }
+            .oz-sm-mt-#{$i}#{$unit} {
+                margin-top: #{$i}#{$unit}
+            }
+            .oz-sm-mb-#{$i}#{$unit} {
+                margin-bottom: #{$i}#{$unit}
+            }
+            .oz-sm-ml-#{$i}#{$unit} {
+                margin-left: #{$i}#{$unit}
+            }
+            .oz-sm-mr-#{$i}#{$unit} {
+                margin-right: #{$i}#{$unit}
+            }
+        };
+        @include media($md-breakpoint){
+            .oz-md-p-#{$i}#{$unit} {
+                padding: #{$i}#{$unit}
+            }
+            .oz-md-pt-#{$i}#{$unit} {
+                padding-top: #{$i}#{$unit}
+            }
+            .oz-md-pb-#{$i}#{$unit} {
+                padding-bottom: #{$i}#{$unit}
+            }
+            .oz-md-pl-#{$i}#{$unit} {
+                padding-left: #{$i}#{$unit}
+            }
+            .oz-md-pr-#{$i}#{$unit} {
+                padding-right: #{$i}#{$unit}
+            }
+            .oz-md-m-#{$i}#{$unit} {
+                margin: #{$i}#{$unit}
+            }
+            .oz-md-mt-#{$i}#{$unit} {
+                margin-top: #{$i}#{$unit}
+            }
+            .oz-md-mb-#{$i}#{$unit} {
+                margin-bottom: #{$i}#{$unit}
+            }
+            .oz-md-ml-#{$i}#{$unit} {
+                margin-left: #{$i}#{$unit}
+            }
+            .oz-md-mr-#{$i}#{$unit} {
+                margin-right: #{$i}#{$unit}
+            }
+        };
+        @include media($lg-breakpoint){
+            .oz-lg-p-#{$i}#{$unit} {
+                padding: #{$i}#{$unit}
+            }
+            .oz-lg-pt-#{$i}#{$unit} {
+                padding-top: #{$i}#{$unit}
+            }
+            .oz-lg-pb-#{$i}#{$unit} {
+                padding-bottom: #{$i}#{$unit}
+            }
+            .oz-lg-pl-#{$i}#{$unit} {
+                padding-left: #{$i}#{$unit}
+            }
+            .oz-lg-pr-#{$i}#{$unit} {
+                padding-right: #{$i}#{$unit}
+            }
+            .oz-lg-m-#{$i}#{$unit} {
+                margin: #{$i}#{$unit}
+            }
+            .oz-lg-mt-#{$i}#{$unit} {
+                margin-top: #{$i}#{$unit}
+            }
+            .oz-lg-mb-#{$i}#{$unit} {
+                margin-bottom: #{$i}#{$unit}
+            }
+            .oz-lg-ml-#{$i}#{$unit} {
+                margin-left: #{$i}#{$unit}
+            }
+            .oz-lg-mr-#{$i}#{$unit} {
+                margin-right: #{$i}#{$unit}
+            }
+        };
     }
 }
