@@ -1,0 +1,18 @@
+// Variables
+$xs-breakpoint: 600px;
+$sm-breakpoint: 768px;
+$md-breakpoint: 900px;
+$lg-breakpoint: 1200px;
+// Mixins
+@mixin clear {
+    &::after, &::before{
+        clear: both;
+        display: table;
+        content: '';
+    }
+};
+@mixin media($value: $md-breakpoint, $prop: 'min-width') {
+    @media only screen and ( unquote($prop): $value ){
+        @content;
+    }
+};
