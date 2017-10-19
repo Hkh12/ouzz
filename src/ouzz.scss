@@ -1,8 +1,9 @@
 // Variables
-$xs-breakpoint: 600px;
-$sm-breakpoint: 768px;
-$md-breakpoint: 900px;
-$lg-breakpoint: 1200px;
+$xs-breakpoint: 600px !default;
+$sm-breakpoint: 768px !default;
+$md-breakpoint: 900px !default;
+$lg-breakpoint: 1200px !default;
+$grid-number: 12 !default;
 // Mixins
 @mixin clear {
     &::after, &::before{
@@ -16,3 +17,51 @@ $lg-breakpoint: 1200px;
         @content;
     }
 };
+//Functions
+@function calc-grid($n) {
+    @return $n*100%/$grid-number;
+}
+
+body{
+    margin: 0;
+}
+
+.oz-container-f{
+    display: block;
+    @include clear;
+    min-height: 1px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.oz-container{
+    @extend .oz-container-f;
+    margin-right: auto;
+    margin-left: auto;
+    @include media($xs-breakpoint){
+        width: calc(#{$xs-breakpoint} - 30px);
+    };
+    @include media($sm-breakpoint){
+        width: calc(#{$sm-breakpoint} - 30px);
+    };
+    @include media(){
+        width: calc(#{$md-breakpoint} - 30px);
+    };
+    @include media($lg-breakpoint){
+        width: calc(#{$lg-breakpoint} - 30px);
+    };
+}
+
+.oz-col{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include clear;
+    // classess
+    @for $i from 0 through $grid-number{
+        &.xs-#{$i}{
+            width: calc-grid($i)
+        }
+    }
+}
