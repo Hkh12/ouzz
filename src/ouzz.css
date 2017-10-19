@@ -598,44 +598,6 @@ body {
   }
 }
 
-.oz-d-block {
-  display: block;
-}
-
-.oz-d-inline-block {
-  display: inline-block;
-}
-
-.oz-d-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.oz-d-inline-flex {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.oz-d-table {
-  display: table;
-}
-
-.oz-d-table-cell {
-  display: table-cell;
-}
-
-.oz-d-inline {
-  display: inline;
-}
-
-.oz-d-none {
-  display: none;
-}
-
 .oz-p-1em {
   padding: 1em;
 }
@@ -5524,5 +5486,181 @@ body {
 
   .oz-lg-mr-10px {
     margin-right: 10px;
+  }
+}
+.oz-d-block {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-block {
+    display: block;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-block {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-block {
+    display: block;
+  }
+}
+.oz-d-inline-block {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-inline-block {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-inline-block {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-inline-block {
+    display: inline-block;
+  }
+}
+.oz-d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.oz-d-inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+.oz-d-table {
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-table {
+    display: table;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-table {
+    display: table;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-table {
+    display: table;
+  }
+}
+.oz-d-table-cell {
+  display: table-cell;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-table-cell {
+    display: table-cell;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-table-cell {
+    display: table-cell;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-table-cell {
+    display: table-cell;
+  }
+}
+.oz-d-inline {
+  display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-inline {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-inline {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-inline {
+    display: inline;
+  }
+}
+.oz-d-none {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .oz-sm-d-none {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .oz-md-d-none {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .oz-lg-d-none {
+    display: none;
   }
 }

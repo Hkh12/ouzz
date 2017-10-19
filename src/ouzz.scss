@@ -113,13 +113,6 @@ body{
     }
 }
 
-@each $display in block, inline-block, flex, inline-flex,
-table, table-cell, inline, none{
-    .oz-d-#{$display}{
-        display: $display
-    }
-};
-
 @each $unit in 'em', 'rem', 'px'{
     @for $i from 1 through 10{
         .oz-p-#{$i}#{$unit} {
@@ -250,3 +243,25 @@ table, table-cell, inline, none{
         };
     }
 }
+
+
+@each $display in block, inline-block, flex, inline-flex, table, table-cell, inline, none{
+    .oz-d-#{$display}{
+        display: $display
+    }
+    @include media($sm-breakpoint){
+        .oz-sm-d-#{$display}{
+            display: $display
+        }
+    }
+    @include media($md-breakpoint){
+        .oz-md-d-#{$display}{
+            display: $display
+        }
+    }
+    @include media($lg-breakpoint){
+        .oz-lg-d-#{$display}{
+            display: $display
+        }
+    }
+};
