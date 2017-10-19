@@ -119,3 +119,38 @@ table, table-cell, inline, none{
         display: $display
     }
 };
+
+@each $unit in 'em', 'rem', 'px'{
+    @for $i from 1 through 10{
+        .oz-p-#{$i}#{$unit} {
+            padding: #{$i}#{$unit}
+        }
+        .oz-pt-#{$i}#{$unit} {
+            padding-top: #{$i}#{$unit}
+        }
+        .oz-pb-#{$i}#{$unit} {
+            padding-bottom: #{$i}#{$unit}
+        }
+        .oz-pl-#{$i}#{$unit} {
+            padding-left: #{$i}#{$unit}
+        }
+        .oz-pr-#{$i}#{$unit} {
+            padding-right: #{$i}#{$unit}
+        }
+        .oz-m-#{$i}#{$unit} {
+            margin: #{$i}#{$unit}
+        }
+        .oz-mt-#{$i}#{$unit} {
+            margin-top: #{$i}#{$unit}
+        }
+        .oz-mb-#{$i}#{$unit} {
+            margin-bottom: #{$i}#{$unit}
+        }
+        .oz-ml-#{$i}#{$unit} {
+            margin-left: #{$i}#{$unit}
+        }
+        .oz-mr-#{$i}#{$unit} {
+            margin-right: #{$i}#{$unit}
+        }
+    }
+}
