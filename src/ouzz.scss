@@ -67,6 +67,9 @@ body{
         };
         &.xs-fw-#{$i}{
             left: calc-grid($i)
+        };
+        &.xs-bw-#{$i}{
+            right: calc-grid($i)
         }
     }
     @for $i from 0 through $grid-number{
@@ -76,6 +79,9 @@ body{
             };
             &.sm-fw-#{$i}{
                 left: calc-grid($i)
+            };
+            &.sm-bw-#{$i}{
+                right: calc-grid($i)
             }
         };
     }
@@ -86,6 +92,9 @@ body{
             };
             &.md-fw-#{$i}{
                 left: calc-grid($i)
+            };
+            &.md-bw-#{$i}{
+                right: calc-grid($i)
             }
         };
     }
@@ -96,7 +105,17 @@ body{
             };
             &.lg-fw-#{$i}{
                 left: calc-grid($i)
+            };
+            &.lg-bw-#{$i}{
+                right: calc-grid($i)
             }
         };
     }
 }
+
+@each $display in block, inline-block, flex, inline-flex,
+table, table-cell, inline, none{
+    .oz-d-#{$display}{
+        display: $display
+    }
+};
