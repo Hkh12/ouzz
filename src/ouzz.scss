@@ -58,10 +58,45 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     @include clear;
-    // classess
+    position: relative;
+    // `xs` columns
+    // It's the first breakpoint, so it doen'nt need media query
     @for $i from 0 through $grid-number{
         &.xs-#{$i}{
             width: calc-grid($i)
+        };
+        &.xs-fw-#{$i}{
+            left: calc-grid($i)
         }
+    }
+    @for $i from 0 through $grid-number{
+        @include media($sm-breakpoint){
+            &.sm-#{$i}{
+                width: calc-grid($i)
+            };
+            &.sm-fw-#{$i}{
+                left: calc-grid($i)
+            }
+        };
+    }
+    @for $i from 0 through $grid-number{
+        @include media($md-breakpoint){
+            &.md-#{$i}{
+                width: calc-grid($i)
+            };
+            &.md-fw-#{$i}{
+                left: calc-grid($i)
+            }
+        };
+    }
+    @for $i from 0 through $grid-number{
+        @include media($lg-breakpoint){
+            &.lg-#{$i}{
+                width: calc-grid($i)
+            };
+            &.lg-fw-#{$i}{
+                left: calc-grid($i)
+            }
+        };
     }
 }
