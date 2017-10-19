@@ -1,0 +1,51 @@
+@import "../data/_data";
+.oz-col{
+    float: right;
+    text-align: right;
+    @for $i from 0 through $grid-number{
+        &.xs-fw-#{$i}{
+            right: calc-grid($i);
+            left: auto;
+        }
+        &.xs-bw-#{$i}{
+            left: calc-grid($i);
+            right: auto
+        }
+    }
+    @for $i from 0 through $grid-number{
+        @include media($sm-breakpoint){
+            &.sm-fw-#{$i}{
+                right: calc-grid($i);
+                left: auto;
+            }
+            &.sm-bw-#{$i}{
+                left: calc-grid($i);
+                right: auto
+            }
+        };
+    }
+    @for $i from 0 through $grid-number{
+        @include media($md-breakpoint){
+            &.md-fw-#{$i}{
+                right: calc-grid($i);
+                left: auto;
+            }
+            &.md-bw-#{$i}{
+                left: calc-grid($i);
+                right: auto
+            }
+        };
+    }
+    @for $i from 0 through $grid-number{
+        @include media($lg-breakpoint){
+            &.lg-fw-#{$i}{
+                right: calc-grid($i);
+                left: auto;
+            }
+            &.lg-bw-#{$i}{
+                left: calc-grid($i);
+                right: auto
+            }
+        };
+    }
+}

@@ -41,6 +41,8 @@ body {
 }
 
 .oz-col {
+  text-align: left;
+  float: left;
   display: block;
   padding-left: 15px;
   padding-right: 15px;

@@ -1,0 +1,23 @@
+// Variables
+$xs-breakpoint: 600px !default;
+$sm-breakpoint: 768px !default;
+$md-breakpoint: 900px !default;
+$lg-breakpoint: 1200px !default;
+$grid-number: 12 !default;
+// Mixins
+@mixin clear {
+    &::after, &::before{
+        clear: both;
+        display: table;
+        content: '';
+    }
+};
+@mixin media($value: $md-breakpoint, $prop: 'min-width') {
+    @media only screen and ( unquote($prop): $value ){
+        @content;
+    }
+};
+//Functions
+@function calc-grid($n) {
+    @return $n*100%/$grid-number;
+}
