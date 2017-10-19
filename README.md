@@ -2,11 +2,11 @@
 Ouzz is a CSS tool for creating responsive grid systems, or CSS box model classes.
 Ouzz is built by Sass, so it's fully customizable.
 ## Table Of Contents
-- [Get Started](#getstarted)
-- [Grid system](#gridsystem)
-- [CSS box model classes](#boxmodel) (`padding` or `margin` in all directions such as `right` or `top`)
+- [Get Started](#get-started)
+- [Grid system](#grid-system)
+- [CSS box model classes](#box-model) (`padding` or `margin` in all directions such as `right` or `top`)
 - [Classes for CSS displays](#displays) (like `flex` or `inline-block`)
-- [Ouzz in RTL](#rtl)
+- [Ouzz in RTL](#ouzz-in-rtl)
 
 All of these stuff can be used with media queries.
  <!-- see examples at [Example Page](https://hkh12.github.io/ouzz). (Working on it!) -->
